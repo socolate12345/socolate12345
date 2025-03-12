@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 2px solid #800000;
+}
+.header-bar {
+    background-color: #f8e4c1;
+    color: black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.header-bar img {
+    width: 90px; /* Adjust as needed */
+    margin-right: 15px;
+}
+
+/* Border under "Speaker of the Month" */
+.main-content h2 {
+    color: #d40808;
+    border-bottom: 2px solid #800000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.main-content h3 {
+    color: #d40808;
+    border-bottom: 2px solid #d40808;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.main-content h4 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    border-bottom: 2px solid #800000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Border under "Read more" and "Play video" */
+.main-content p:last-of-type {
+    border-bottom: 2px solid #800000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: left;
+}
+.main-nav {
+    background-color: #cc0000;
+    padding: 10px;
+    text-align: center;
+}
+.main-nav a {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+/* Navbar ẩn */
+.hidden-navbar {
+    display: none;
+    position: absolute;
+    top: 100%; /* Hiển thị ngay dưới About Us */
+    left: 0;
+    width: 150%;
+    background-color: #cc0000;
+    padding: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+/* Hiển thị navbar khi hover */
+.dropdown:hover .hidden-navbar {
+    display: block;
+}
+
+/* Đổi màu khi hover vào mục con */
+.hidden-navbar a:hover {
+    background-color: #800000;
+}
+/* Các mục trong navbar ẩn */
+.hidden-navbar a {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.content-area {
+    display: flex;
+}
+.sidebar {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+.sidebar img {
+    width: 120px; /* hoặc giá trị phù hợp */
+    height: auto;
+    margin-bottom: 10px;
+}
+.main-content {
+    width: 75%;
+    padding: 20px;
+    
+}
+.footer {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
